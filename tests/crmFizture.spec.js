@@ -5,6 +5,7 @@ import contactData from "../test_data/contact.json"
 import productData from '../test_data/produts.json'
 import opportunityData from "../test_data/opportunity.json"
 import leads from '../test_data/leads.json'
+import quoteData from '../test_data/quote.json'
 
 test('Organisation Fixture Test', async ({ organisationPage }) => {
     test.slow()
@@ -52,11 +53,26 @@ test('Opportunity Fixture', async ({ OpportunityCreates }) => {
 })
 
 
-test.only('Leads Fixture', async ({ leadsPage }) => {
+test('Leads Fixture', async ({ leadsPage }) => {
     test.setTimeout(90000)
     await leadsPage.createLead(leads[0])
     await leadsPage.leadsOptionalData(leads[0])
     await leadsPage.saveLead()
+})
+
+
+test.only('Quote Fixture', async ({quotePage}) => {
+    test.setTimeout(90000)
+    await quotePage.createQuote(quoteData[0])
+    await quotePage.opportunityPopUp(opportunityData[0])
+    await quotePage.contactPopUp(contactData[0])
+    await quotePage.organisationPopUp(orgData[0])
+    await quotePage.itemWindow(productData[0])
+    await quotePage.quoteBillingInformation(quoteData[0])
+    await quotePage.quoteShippingInformation(quoteData[0])
+    await quotePage.quoteDescription(quoteData[0])
+    await quotePage.quoteItemsDetails(quoteData[0])
+    await quotePage.saveQuote()   
 })
 
 
