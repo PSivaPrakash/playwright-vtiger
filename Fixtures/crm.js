@@ -3,6 +3,7 @@ import { Organisations } from '../pages/OrganisationPage.js'
 import { Contacts } from '../pages/ContactPage.js'
 import { Products } from '../pages/ProductsPage.js'
 import {Opportunitys} from '../pages/OpportunityPage.js'
+import {Leads} from '../pages/LeadsPage.js'
 
 export let test = base.extend({
     organisationPage: async ({ loginPage }, use) => {
@@ -22,6 +23,12 @@ export let test = base.extend({
     OpportunityCreates: async ({ loginPage }, use) => {
         let OpportunityCreates = new Opportunitys(loginPage)
         await use(OpportunityCreates)
+
+    },
+
+    leadsPage: async ({ loginPage }, use) => {
+        let leadsPage = new Leads(loginPage)
+        await use(leadsPage)
 
     }
 
