@@ -1,0 +1,29 @@
+[
+    {  
+    "organisationUrl":"http://localhost:8888/index.php?module=Accounts&action=index",
+    "organisationName": "Default Organisation",
+    "phone": "9988779900",
+    "email": "psp244@gmail.com",
+    "employees": "20",
+    "website": "www.psp.com"
+},
+
+{  
+    "organisationUrl":"http://localhost:8888/index.php?module=Accounts&action=index",
+    "organisationName": "Core",
+    "phone": "8899009988",
+    "email": "sp123@gmail.com",
+    "employees": "17",
+    "website": "www.sp123.com"
+},
+
+{  
+    "organisationUrl":"http://localhost:8888/index.php?module=Accounts&action=index",
+    "organisationName": "Awesome",
+    "phone": "9876543210",
+    "email": "efd@gmail.com",
+    "employees": "19",
+    "website": "www.dgf.com"
+}
+
+]

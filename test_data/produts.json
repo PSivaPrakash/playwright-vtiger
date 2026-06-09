@@ -1,0 +1,44 @@
+[
+    {
+        "productInformation": {
+            "productUrl": "http://localhost:8888/index.php?action=index&module=Home",
+            "productName": "Default Product",
+            "partNumber": "23",
+            "saleStartDate": "2026-06-01",
+            "manufacturer": "MetBeat Corp",
+            "productCategory": "Hardware",
+            "supportStartDate": "2026-06-01",
+            "saleEndDate": "2026-06-02",
+            "supportEndDate": "2026-06-02",
+            "website": "www.poem.com",
+            "vendorPartNumber": "90345",
+            "mfrPartNumber": "45",
+            "productSheet": "Going",
+            "serialNumber": "8",
+            "glAccount": "301-Sales-Hardware",
+            "productQuantity": "1",
+            "dropDownItem": "Product Name"
+        },
+        "procingInformation":
+        {
+            "unitPrice": "12",
+            "commissionRate": "5"
+        },
+        "stockInformation":
+        {
+            "usageUnit": "Pack",
+            "qtyUnit": "5",
+            "qtyInStock": "5",
+            "recorderLevel": "2",
+            "qtyInDemand": "2"
+        },
+        "productImageInformation":
+        {
+            "productImageLocation": "test_data/Images/demoImage.jpeg"
+        },
+        "descriptionInformation":
+        {
+            "description": "The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog."
+        }
+    }
+]

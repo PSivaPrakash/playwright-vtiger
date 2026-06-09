@@ -1,0 +1,49 @@
+[
+    {
+        "salesInformation": {
+            "saleSubject": "Default Sales",
+            "customerNumber": "9900345960",
+            "purchaseOrder": "45",
+            "dueDate": "2026-06-01",
+            "carrier": "UPS",
+            "pending": "Yes",
+            "status": "Approved",
+            "salesCommission": "34",
+            "exciseDuty": "7",
+            "dropDownOption": "Subject"
+        },
+        "invoiceInformation": {
+            "frequency": "Weekly",
+            "paymentDuration": "Net 45 days",
+            "invoiceStatus": "Sent"
+        },
+        "addressInfo": {
+            "billingAddressSection": {
+                "billingAddress": "14th A Main Road, Indiranagar.",
+                "billingPoBox": "6744",
+                "billingCity": "Bangalore",
+                "billingState": "Karnataka",
+                "billingPostalCode": "560037",
+                "billingCountry": "India"
+            },
+            "shippingAddressSection": {
+                "shippingAddress": "12th Main Road, Gorantla",
+                "shippingPoBox": "3345",
+                "shippingCity": "Guntur",
+                "shippingState": "Andhra Pradesh",
+                "shippingPostalCode": "522020",
+                "shippingCountry": "India"
+            }
+        },
+        "descriptionInfo": {
+            "description": "How quickly daft jumping zebras vex. Two driven jocks help fax my big quiz. Quick, Baz, get my woven flax jodhpurs!"
+        },
+        "itemDetails": {
+            "productQuantity": "1",
+            "comments1": "This is a good Product",
+            "shippingHandlingCharges": "5.00",
+            "adjustmentType": "Add",
+            "adjustment": "2.00"
+        }
+    }
+]

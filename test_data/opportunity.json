@@ -1,0 +1,30 @@
+[
+    {
+        "opportunityInformation": {
+            "opportunityName": "Default Opportunity",
+            "amount": "4500",
+            "type": "New Business",
+            "leadSource": "Partner",
+            "nextStep": "Expand",
+            "salesStage": "Qualification",
+            "probability": "75"
+        },
+        "descriptionInformation": {
+            "description": "The European languages are members of the same family. Their separate existence is a myth."
+        }
+    },
+    {
+        "opportunityInformation": {
+            "opportunityName": "Lottery",
+            "amount": "56708",
+            "type": "Existing Business",
+            "leadSource": "Employee",
+            "nextStep": "Luck",
+            "salesStage": "Needs Analysis",
+            "probability": "1"
+        },
+        "descriptionInformation": {
+            "description": "One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin."
+        }
+    }
+]

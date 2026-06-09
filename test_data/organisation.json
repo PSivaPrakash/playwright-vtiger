@@ -1,0 +1,128 @@
+[
+    {
+        "organisationInfo": {
+            "organisationUrl": "http://localhost:8888/index.php?module=Accounts&action=index",
+            "organisationName": "Default Organisation",
+            "website": "www.psp.com",
+            "phone": "8309492224",
+            "ticketSymbol": "234",
+            "fax": "123-45666",
+            "memberOf": "",
+            "otherPhone": "990099567",
+            "employees": "22",
+            "email": "psp244@gmail.com",
+            "otherEmail": "spsp344@gmail.com",
+            "ownership": "Pepsi",
+            "industryType": "Energy",
+            "rating": "Active",
+            "accountType": "Press",
+            "sicCode": "99745",
+            "annualRevenue": "1000"
+        },
+        "addressInfo": {
+            "billingAddressSection": {
+                "billingAddress": "14th A Main Road, Indiranagar.",
+                "billingPoBox": "6744",
+                "billingCity": "Bangalore",
+                "billingState": "Karnataka",
+                "billingPostalCode": "560037",
+                "billingCountry": "India"
+            },
+            "shippingAddressSection": {
+                "shippingAddress": "12th Main Road, Gorantla",
+                "shippingPoBox": "3345",
+                "shippingCity": "Guntur",
+                "shippingState": "Andhra Pradesh",
+                "shippingPostalCode": "522020",
+                "shippingCountry": "India"
+            }
+        },
+        "descriptionInfo": {
+            "description": "A wizard’s job is to vex chumps quickly in fog. Watch Jeopardy!"
+        }
+    },
+    {
+        "organisationInfo": {
+            "organisationUrl": "http://localhost:8888/index.php?module=Accounts&action=index",
+            "organisationName": "The Gold Ltd.",
+            "website": "www.spsp3445.com",
+            "phone": "9900990087",
+            "ticketSymbol": "24567",
+            "fax": "112-344-5667",
+            "memberOf": "",
+            "otherPhone": "8909564356",
+            "employees": "37",
+            "email": "golden@gmail.com",
+            "otherEmail": "petrol456@gmail.com",
+            "ownership": "Coke",
+            "industryType": "Banking",
+            "rating": "Acquired",
+            "accountType": "Partner",
+            "sicCode": "99745",
+            "annualRevenue": "5506"
+        },
+        "addressInfo": {
+            "billingAddressSection": {
+                "billingAddress": "303/d, sector 15, vsp",
+                "billingPoBox": "55688",
+                "billingCity": "Visakhapatnam",
+                "billingState": "Andhra Pradesh",
+                "billingPostalCode": "530456",
+                "billingCountry": "India"
+            },
+            "shippingAddressSection": {
+                "shippingAddress": "56/544, KK Nagar, Post Bank",
+                "shippingPoBox": "9086",
+                "shippingCity": "Durg",
+                "shippingState": "Chattisgarh",
+                "shippingPostalCode": "560098",
+                "shippingCountry": "India"
+            }
+        },
+        "descriptionInfo": {
+            "description": "You're likely here looking for a number of different adjectives. If you are, you have come exactly to the right page."
+        }
+    },
+    {
+        "organisationInfo": {
+            "organisationUrl": "http://localhost:8888/index.php?module=Accounts&action=index",
+            "organisationName": "Blue Rubber",
+            "website": "www.quality.com",
+            "phone": "7890456908",
+            "ticketSymbol": "234",
+            "fax": "998-456433",
+            "memberOf": "",
+            "otherPhone": "8944093384",
+            "employees": "124",
+            "email": "kjilf4533@gmail.com",
+            "otherEmail": "onionplate@gmail.com",
+            "ownership": "Building Co.",
+            "industryType": "Consulting",
+            "rating": "Shutdown",
+            "accountType": "Reseller",
+            "sicCode": "99745",
+            "annualRevenue": "9765"
+        },
+        "addressInfo": {
+            "billingAddressSection": {
+                "billingAddress": "78yj, new town holiday",
+                "billingPoBox": "0998",
+                "billingCity": "Visakhapatnam",
+                "billingState": "AP",
+                "billingPostalCode": "546078",
+                "billingCountry": "India"
+            },
+            "shippingAddressSection": {
+                "shippingAddress": "12th Main Road, Gorantla",
+                "shippingPoBox": "3345",
+                "shippingCity": "Guntur",
+                "shippingState": "Andhra Pradesh",
+                "shippingPostalCode": "522020",
+                "shippingCountry": "India"
+            }
+        },
+        "descriptionInfo": {
+            "description": "While there are a number of reasons you may want to create random adjectives, one of the most common is writers looking for new ways to better describe their writing."
+        }
+    }
+]

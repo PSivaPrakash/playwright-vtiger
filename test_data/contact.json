@@ -1,0 +1,86 @@
+[
+    {
+        "contactInformation": {
+            "salutationType": "Mr.",
+            "firstName": "Default",
+            "lastName": "Contacts",
+            "officePhone": "080-123866",
+            "mobile": "9900982357",
+            "leadSource": "Employee",
+            "homePhone": "8765432190",
+            "title": "Polish",
+            "otherPhone": "7890345765",
+            "department": "Legal",
+            "fax": "145-987633",
+            "email": "soldier45@gmail.com",
+            "birthday": "2026-05-30",
+            "assistant": "Local",
+            "assistantPhone": "9080708090",
+            "secondaryEmail": "rogue34@gmail.com",
+            "popUpDropDownOption": "First Name"
+        },
+        "addressInformation": {
+            "mailingAddress": {
+                "mailingStreet": "This is the street address",
+                "mailingPoBox": "998098",
+                "mailingCity": "Visakhapatnam",
+                "mailingState": "Andhra Pradesh",
+                "mailingPostalCode": "522020",
+                "mailingCountry": "India"
+            },
+            "otherAddress": {
+                "otherStreet": "This is the street address",
+                "othergPoBox": "998098",
+                "otherCity": "Visakhapatnam",
+                "otherState": "Andhra Pradesh",
+                "otherPostalCode": "522020",
+                "otherCountry": "India"
+            }
+        },
+        "contactDescription": {
+            "description": "According to Oxford English Dictionary, the three most common adjectives are good, new and first."
+        }
+    },
+    {
+        "contactInformation": {
+            "salutationType": "Mr.",
+            "firstName": "Siva",
+            "lastName": "Prakash",
+            "officePhone": "9900908765",
+            "mobile": "9900982357",
+            "leadSource": "Partner",
+            "homePhone": "7890349086",
+            "title": "German",
+            "otherPhone": "7890765478",
+            "department": "Education",
+            "fax": "97-87678",
+            "email": "wonder45@gmail.com",
+            "assistant": "Foreign",
+            "birthday": "2026-05-30",
+            "assistantPhone": "8908755678",
+            "secondaryEmail": "gentlemen@gmail.com",
+            "popUpDropDownOption": "First Name"
+        },
+        "addressInformation": {
+            "mailingAddress": {
+                "mailingStreet": "Dont mail me ever",
+                "mailingPoBox": "87690",
+                "mailingCity": "Marathalli",
+                "mailingState": "Karataka",
+                "mailingPostalCode": "560037",
+                "mailingCountry": "India"
+            },
+            "otherAddress": {
+                "otherStreet": "Once and for all Strees",
+                "othergPoBox": "45690",
+                "otherCity": "Durg",
+                "otherState": "Chattisgarh",
+                "otherPostalCode": "510098",
+                "otherCountry": "India"
+            }
+        },
+        "contactDescription": {
+            "description": "Adjectives are words which modify nouns or pronouns to make the noun or pronoun more specific."
+        }
+    }
+]

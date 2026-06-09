@@ -1,0 +1,98 @@
+[
+    {
+        "leadInformation": {
+            "salutationType": "Mr.",
+            "leadFirstName": "Default",
+            "leadLastName": "Leads",
+            "leadCompanyName": "Netflix",
+            "phone": "9900900567",
+            "mobile": "8309492224",
+            "title": "New North",
+            "fax": "123-45966",
+            "leadSource": "Partner",
+            "email": "going455@gmail.com",
+            "industryType": "Engineering",
+            "website": "www.going.com",
+            "annualRevenue": "7678",
+            "leadStatus": "Warm",
+            "employees": "56",
+            "rating": "Active",
+            "secondaryEmail": "hunter@gmail.com"
+        },
+        "addressInformation": {
+            "street": "567th, kk right tower",
+            "poBox": "560987",
+            "postalCode": "522020",
+            "city": "Vijayawada",
+            "state": "Andhra Pradesh",
+            "country": "India"
+        },
+        "descriptionInformation": {
+            "description": "Did you know that there are actually three types of adjectives in the Eglish language?"
+        }
+    },
+    {
+        "leadInformation": {
+            "salutationType": "Mr.",
+            "leadFirstName": "Super",
+            "leadLastName": "Man",
+            "leadCompanyName": "Hotstar",
+            "phone": "9900900567",
+            "mobile": "9900988765",
+            "title": "South Water",
+            "fax": "987-9976",
+            "leadSource": "Trade Show",
+            "email": "exit567@gmail.com",
+            "industryType": "Finance",
+            "website": "www.underground.com",
+            "annualRevenue": "109876",
+            "leadStatus": "Hot",
+            "employees": "198",
+            "rating": "Acquired",
+            "secondaryEmail": "goingagain@gmail.com"
+        },
+        "addressInformation": {
+            "street": "123, youth west, near land, amazing",
+            "poBox": "550097",
+            "postalCode": "560037",
+            "city": "Bangalore",
+            "state": "Karnataka",
+            "country": "India"
+        },
+        "descriptionInformation": {
+            "description": "Another type of adjective is the quantitative adjective. When a qualitative adjective is used,"
+        }
+    },
+    {
+        "leadInformation": {
+            "salutationType": "Mr.",
+            "leadFirstName": "Going",
+            "leadLastName": "Mary",
+            "leadCompanyName": "Amazon Prime",
+            "phone": "9900900567",
+            "mobile": "9988334567",
+            "title": "Land Buy",
+            "fax": "09956-456",
+            "leadSource": "Direct Mail",
+            "email": "jersey@gmail.com",
+            "industryType": "Banking",
+            "website": "www.amazing45.com",
+            "annualRevenue": "99866",
+            "leadStatus": "Qualified",
+            "employees": "156",
+            "rating": "Market Failed",
+            "secondaryEmail": "joker@gmail.com"
+        },
+        "addressInformation": {
+            "street": "north to the west pole",
+            "poBox": "990045",
+            "postalCode": "510000",
+            "city": "Durg",
+            "state": "Chattisgarh",
+            "country": "India"
+        },
+        "descriptionInformation": {
+            "description": "Yes, the word random is an adjective. It can also be used informally as a noun."
+        }
+    }
+]

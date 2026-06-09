@@ -1,0 +1,117 @@
+import { expect, test } from '@playwright/test'
+import orgData from "../../test_data/organisation.json"
+import loginData from "../../test_data/login.json"
+import multiples from "../../test_data/multiOrg.json"
+import { Organisations } from '../../pages/OrganisationPage.js'
+import { SignIn } from '../../pages/LoginPage.js'
+
+// test('Organisation Create1', async ({ page }) => {
+//     test.setTimeout(60000)
+//     await page.goto(loginData.url)
+//     await expect(page.locator('//input[@type="text"]')).toBeVisible()
+//     await expect(page.locator('//input[@type="password"]')).toBeVisible()
+//     await expect(page.locator('//input[@type="submit"]')).toBeEnabled()
+//     await page.locator('//input[@type="text"]').fill(loginData.username)
+//     await page.locator('//input[@type="password"]').fill(loginData.password)
+//     await page.locator('//input[@type="submit"]').click()
+//     await expect(page).toHaveURL(loginData.homeUrl)
+//     //await page.locator('//a[text()="Organizations"]').click()
+//     await page.getByRole('link', { name: 'Organizations' }).first().click()
+//     await expect(page).toHaveURL(orgData.organisationUrl)
+//     await page.locator('//img[@title="Create Organization..."]').click()
+//     await expect(page.locator('//input[@name="accountname"]')).toBeVisible()
+//     await page.locator('//input[@name="accountname"]').fill(orgData.organisationName)
+//     await expect(page.locator('//input[@name="accountname"]')).toHaveValue(orgData.organisationName)
+//     await page.locator('input[name="phone"]').fill(orgData.phone)
+//     await page.locator('input[name="email1"]').fill(orgData.email)
+//     await page.locator('input[name="employees"]').fill(orgData.employees)
+//     await page.locator('input[name="website"]').fill(orgData.website)
+//     await page.locator('//select[@name="industry"]').selectOption('Energy')
+//     await page.locator('//select[@name="accounttype"]').selectOption('Press')
+//     await page.locator('//input[@value="  Save  "]').first().click()
+//     await page.waitForLoadState('networkidle')
+//     const confirmationMessage = await page.locator('.dvHeaderText')
+//     await expect(confirmationMessage).toContainText(orgData.organisationName)
+//     await page.locator('//img[@src="themes/softed/images/user.PNG"]').hover()
+//     await expect(page.getByText('Sign Out')).toBeVisible()
+//     await page.getByText('Sign Out').click()
+//     await page.waitForTimeout(3000)
+
+// })
+
+// test('Multiple Organisation Create', async ({ page }) => {
+//     for (let multiTest of multiples) {
+//         test.setTimeout(90000)
+//         await page.goto(loginData.url)
+//         await expect(page.locator('//input[@type="text"]')).toBeVisible()
+//         await expect(page.locator('//input[@type="password"]')).toBeVisible()
+//         await expect(page.locator('//input[@type="submit"]')).toBeEnabled()
+//         await page.locator('//input[@type="text"]').fill('admin')
+//         await page.locator('//input[@type="password"]').fill('admin')
+//         await page.locator('//input[@type="submit"]').click()
+//         await expect(page).toHaveURL(loginData.homeUrl)
+//         //await page.locator('//a[text()="Organizations"]').click()
+//         await page.getByRole('link', { name: 'Organizations' }).first().click()
+//         await expect(page).toHaveURL(multiTest.organisationUrl)
+//         await page.locator('//img[@title="Create Organization..."]').click()
+//         await expect(page.locator('//input[@name="accountname"]')).toBeVisible()
+//         await page.locator('//input[@name="accountname"]').fill(multiTest.organisationName)
+//         await expect(page.locator('//input[@name="accountname"]')).toHaveValue(multiTest.organisationName)
+//         await page.locator('input[name="phone"]').fill(multiTest.phone)
+//         await page.locator('input[name="email1"]').fill(multiTest.email)
+//         await page.locator('input[name="employees"]').fill(multiTest.employees)
+//         await page.locator('input[name="website"]').fill(multiTest.website)
+//         await page.locator('//select[@name="industry"]').selectOption('Energy')
+//         await page.locator('//select[@name="accounttype"]').selectOption('Press')
+//         await page.locator('//input[@value="  Save  "]').first().click()
+//         await page.waitForLoadState('networkidle')
+//         const confirmationMessage = await page.locator('.dvHeaderText')
+//         await expect(confirmationMessage).toContainText(multiTest.organisationName)
+//         await page.locator('//img[@src="themes/softed/images/user.PNG"]').hover()
+//         await expect(page.getByText('Sign Out')).toBeVisible()
+//         await page.getByText('Sign Out').click()
+//         await page.waitForTimeout(3000)
+//     }
+
+// })
+
+test('POM Create Organisation', async ({ page }) => {
+    test.setTimeout(90000)
+    let OrganisationObj = new Organisations(page)
+    let userLogin = new SignIn(page)
+    await userLogin.browserLaunch(loginData.url)
+    await expect(userLogin.userNameField).toBeVisible()
+    await expect(userLogin.passwordField).toBeVisible()
+    await expect(userLogin.loginButtonField).toBeEnabled()
+    await userLogin.loginUser(loginData)
+    await OrganisationObj.createOrganisation(orgData[0])
+    await OrganisationObj.organisationAdditionaInformation(orgData[0])
+    await OrganisationObj.saveOrganisation()
+    const confirmationMessage = await page.locator('.dvHeaderText')
+    await expect(confirmationMessage).toContainText(orgData[0].organisationInfo.organisationName)
+    await userLogin.logoutUser()
+
+})
+
+test('POM Multiple Create Organisation', async ({ page }) => {
+    test.setTimeout(90000)
+    let userLogin = new SignIn(page)
+    await userLogin.browserLaunch(loginData.url)
+    await expect(userLogin.userNameField).toBeVisible()
+    await expect(userLogin.passwordField).toBeVisible()
+    await expect(userLogin.loginButtonField).toBeEnabled()
+    await userLogin.loginUser(loginData)
+    for (let org of orgData) {
+        let OrganisationObj = new Organisations(page)
+        await OrganisationObj.createOrganisation(org)
+        await OrganisationObj.organisationAdditionaInformation(org)
+        await OrganisationObj.organisationBillingInformation(org)
+        await OrganisationObj.organisationShippingInformation(org)
+        await OrganisationObj.organisationDescriptionInformation(org)
+        await OrganisationObj.saveOrganisation()
+        const confirmationMessage = await page.locator('.dvHeaderText')
+        await expect(confirmationMessage).toContainText(org.organisationInfo.organisationName)
+    }
+    await userLogin.logoutUser()
+
+})
