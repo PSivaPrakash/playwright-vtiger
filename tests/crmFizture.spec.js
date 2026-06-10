@@ -6,6 +6,7 @@ import productData from '../test_data/produts.json'
 import opportunityData from "../test_data/opportunity.json"
 import leads from '../test_data/leads.json'
 import quoteData from '../test_data/quote.json'
+import salesData from '../test_data/sales.json'
 
 test('Organisation Fixture Test', async ({ organisationPage }) => {
     test.slow()
@@ -30,7 +31,7 @@ test('Contacts Fixture Test', async ({ contactsPage }) => {
 
 })
 
-test('Products Fixture', async ({ productPage }) => {
+test(' @smoke Products Fixture', async ({ productPage }) => {
     test.slow()
     await productPage.createProduct(productData[0])
     await productPage.productAdditionalInfo(productData[0])
@@ -61,7 +62,7 @@ test('Leads Fixture', async ({ leadsPage }) => {
 })
 
 
-test.only('Quote Fixture', async ({quotePage}) => {
+test(' Quote Fixture', async ({quotePage}) => {
     test.setTimeout(90000)
     await quotePage.createQuote(quoteData[0])
     await quotePage.opportunityPopUp(opportunityData[0])
@@ -73,6 +74,22 @@ test.only('Quote Fixture', async ({quotePage}) => {
     await quotePage.quoteDescription(quoteData[0])
     await quotePage.quoteItemsDetails(quoteData[0])
     await quotePage.saveQuote()   
+})
+
+test.only('Sales Fixture', async ({salesPage}) => {
+    test.setTimeout(90000)
+    await salesPage.createSalesOrderPage(salesData[0])
+    await salesPage.opportunityPopUp(opportunityData[0])
+    await salesPage.quotePopUp(quoteData[0])
+    await salesPage.contactPopUp(contactData[0])
+    await salesPage.organisationPopUp(orgData[0])
+    await salesPage.itemWindow(productData[0])
+    await salesPage.additionalInformation(salesData[0])
+    await salesPage.salesBillingInformation(salesData[0])
+    await salesPage.salesShippingInformation(salesData[0])
+    await salesPage.salesDescription(salesData[0])
+    await salesPage.saveSalesOrder()
+    
 })
 
 
