@@ -76,7 +76,7 @@ test(' Quote Fixture', async ({quotePage}) => {
     await quotePage.saveQuote()   
 })
 
-test.only('Sales Fixture', async ({salesPage}) => {
+test('Sales Fixture', async ({salesPage}) => {
     test.setTimeout(90000)
     await salesPage.createSalesOrderPage(salesData[0])
     await salesPage.opportunityPopUp(opportunityData[0])
